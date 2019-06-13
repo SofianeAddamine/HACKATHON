@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Connexion à l'administration - EB Connection</title>
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+        <!-- Bootstrap core CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Material Design Bootstrap -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.2/css/mdb.min.css" rel="stylesheet">
+    </head>
+    <body>
+                <main class="container-fluid mt-5 pt-5">
+                    <section class="row my-5">
+                        <div class="col"></div>
+                        <div class="col-md-5 col-sm-7" id="container">
+                            <form class="text-white mdb-color darken-2 p-5" method="post">
+                                <p class="h4 mb-4 text-center" id="main-content">Connexion</p>
+                                <div class="md-form">
+                                    <label for="email" class="text-white" >Adresse email</label>
+                                    <input type="email" id="email" name="email" class="form-control mb-4 text-white" required>
+                                </div>
+                                <div class="md-form">
+                                    <label for="password" class="text-white">Mot de passe</label>
+                                    <input type="password" id="password" name="password" class="form-control mb-4 text-white" required>
+                                </div>
+                                <button type="submit" name="submit" class="btn mdb-color darken-2 text-white btn-block my-4" ><span id="connexion">Se connecter</span></button>
+                            </form>
+                        </div>
+                        <div class="col"></div>
+                    </section>
+                </main>
+        <!-- GREENSOCK -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+        <script src="effect.js"></script>
+        <!-- JQuery -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.2/js/mdb.min.js"></script>
+
+
+        <script>
+        
+        window.onload = function(){
+            
+            TweenMax.from("#container", 1,{
+                autoAlpha: 0,
+                y: "-300"
+            })
+
+            TweenMax.from("#main-content",3,{
+                autoAlpha: 0,
+            })
+        }
+            
+        </script>
+            
+    </body>
+</html>
